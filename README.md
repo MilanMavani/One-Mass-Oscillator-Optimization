@@ -62,17 +62,18 @@ Where:
 
 ##📈 Results Summary
 The project compares local and global optimizers in terms of:
+  ```bash
+  Optimizer | Objective Value | Evaluations | Iterations | Notes
+  Dual Annealing | ~53.54 / 229.41 | 6k+ | 1000 | Best global, slowest
+  Differential Evolution | ~53.56 / 229.42 | 2k | ~40 | Balanced global option
+  Nelder-Mead | ~53.54 / 229.41 | 169 / 239 | 93 / 135 | Fast & efficient locally
+  L-BFGS-B | ~53.54 / 229.41 | 180 | ~30 | Best local efficiency
 
-Optimizer | Objective Value | Evaluations | Iterations | Notes
-Dual Annealing | ~53.54 / 229.41 | 6k+ | 1000 | Best global, slowest
-Differential Evolution | ~53.56 / 229.42 | 2k | ~40 | Balanced global option
-Nelder-Mead | ~53.54 / 229.41 | 169 / 239 | 93 / 135 | Fast & efficient locally
-L-BFGS-B | ~53.54 / 229.41 | 180 | ~30 | Best local efficiency
-
-##📂 Poject Structure
-  ├── gui.py                  # GUI application
-  ├── optimization.py         # Optimization functions
-  ├── one_mass_model.py       # Core oscillator model
-  ├── df1.pkl / df2.pkl       # Input data files which is not added due to confidentiality
-  ├── README.md               # This file
+## 📂 Poject Structure
+  ```bash
+    ├── gui.py                  # GUI application
+    ├── optimization.py         # Optimization functions
+    ├── one_mass_model.py       # Core oscillator model
+    ├── df1.pkl / df2.pkl       # Input data files which is not added due to confidentiality
+    ├── README.md               # This file
 
